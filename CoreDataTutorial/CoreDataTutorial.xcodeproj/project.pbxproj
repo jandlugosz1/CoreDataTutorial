@@ -13,7 +13,18 @@
 		5CD270201F891850008A8BC9 /* CoreDataTutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CD2701E1F891850008A8BC9 /* CoreDataTutorial.xcdatamodeld */; };
 		5CD270221F891850008A8BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD270211F891850008A8BC9 /* Assets.xcassets */; };
 		5CD270251F891850008A8BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD270231F891850008A8BC9 /* LaunchScreen.storyboard */; };
+		5CD270331F894B15008A8BC9 /* CoreDataTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD270321F894B15008A8BC9 /* CoreDataTutorialTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CD270351F894B15008A8BC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CD2700C1F891850008A8BC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CD270131F891850008A8BC9;
+			remoteInfo = CoreDataTutorial;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5CD270141F891850008A8BC9 /* CoreDataTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		5CD270211F891850008A8BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CD270241F891850008A8BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CD270261F891850008A8BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD270301F894B15008A8BC9 /* CoreDataTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD270321F894B15008A8BC9 /* CoreDataTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTutorialTests.swift; sourceTree = "<group>"; };
+		5CD270341F894B15008A8BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5CD270111F891850008A8BC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD2702D1F894B15008A8BC9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				5CD270161F891850008A8BC9 /* CoreDataTutorial */,
+				5CD270311F894B15008A8BC9 /* CoreDataTutorialTests */,
 				5CD270151F891850008A8BC9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				5CD270141F891850008A8BC9 /* CoreDataTutorial.app */,
+				5CD270301F894B15008A8BC9 /* CoreDataTutorialTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				5CD2701E1F891850008A8BC9 /* CoreDataTutorial.xcdatamodeld */,
 			);
 			path = CoreDataTutorial;
+			sourceTree = "<group>";
+		};
+		5CD270311F894B15008A8BC9 /* CoreDataTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CD270321F894B15008A8BC9 /* CoreDataTutorialTests.swift */,
+				5CD270341F894B15008A8BC9 /* Info.plist */,
+			);
+			path = CoreDataTutorialTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = 5CD270141F891850008A8BC9 /* CoreDataTutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5CD2702F1F894B15008A8BC9 /* CoreDataTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CD270391F894B15008A8BC9 /* Build configuration list for PBXNativeTarget "CoreDataTutorialTests" */;
+			buildPhases = (
+				5CD2702C1F894B15008A8BC9 /* Sources */,
+				5CD2702D1F894B15008A8BC9 /* Frameworks */,
+				5CD2702E1F894B15008A8BC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CD270361F894B15008A8BC9 /* PBXTargetDependency */,
+			);
+			name = CoreDataTutorialTests;
+			productName = CoreDataTutorialTests;
+			productReference = 5CD270301F894B15008A8BC9 /* CoreDataTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +150,11 @@
 					5CD270131F891850008A8BC9 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+					};
+					5CD2702F1F894B15008A8BC9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5CD270131F891850008A8BC9;
 					};
 				};
 			};
@@ -117,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				5CD270131F891850008A8BC9 /* CoreDataTutorial */,
+				5CD2702F1F894B15008A8BC9 /* CoreDataTutorialTests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +185,13 @@
 				5CD270251F891850008A8BC9 /* LaunchScreen.storyboard in Resources */,
 				5CD270221F891850008A8BC9 /* Assets.xcassets in Resources */,
 				5CD2701D1F891850008A8BC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD2702E1F894B15008A8BC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +208,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CD2702C1F894B15008A8BC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD270331F894B15008A8BC9 /* CoreDataTutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CD270361F894B15008A8BC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CD270131F891850008A8BC9 /* CoreDataTutorial */;
+			targetProxy = 5CD270351F894B15008A8BC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5CD2701B1F891850008A8BC9 /* Main.storyboard */ = {
@@ -302,6 +381,36 @@
 			};
 			name = Release;
 		};
+		5CD270371F894B15008A8BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreDataTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jandlugosz.CoreDataTutorialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataTutorial.app/CoreDataTutorial";
+			};
+			name = Debug;
+		};
+		5CD270381F894B15008A8BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreDataTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jandlugosz.CoreDataTutorialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataTutorial.app/CoreDataTutorial";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +428,15 @@
 			buildConfigurations = (
 				5CD2702A1F891850008A8BC9 /* Debug */,
 				5CD2702B1F891850008A8BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CD270391F894B15008A8BC9 /* Build configuration list for PBXNativeTarget "CoreDataTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD270371F894B15008A8BC9 /* Debug */,
+				5CD270381F894B15008A8BC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
